@@ -11,14 +11,12 @@
 </head>
 <body>
 	<h2>Catalogue</h2>
-
-	<c:forEach var="product" items="${applicationScope.productList}"
-		varStatus="productCount">
-		<form method="GET" action="products">
-			<a href="bookDetail.jsp">${product}</a>
-		</form>
-		<p>
-	</c:forEach>
-
+	<form method="GET">
+		<c:forEach var="product" items="${applicationScope.productList}"
+			varStatus="productCount">
+			<a href="bookDetail.jsp?item=${productCount.index}">${product}</a>
+			<p>
+		</c:forEach>
+	</form>
 </body>
 </html>

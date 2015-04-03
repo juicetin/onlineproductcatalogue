@@ -8,7 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:out value="${applicationScope.productList[3]}" />
+	<%-- <c:out value="${applicationScope.productList[3]}" /> --%>
+	
+<%-- 	Hello <b><%= request.getParameter("item") %></b>! --%>
+	
+	<%int no = Integer.parseInt(request.getParameter("item")); %>
+	<c:out value="${applicationScope.productList[0]}"/>
 
 </body>
 </html>

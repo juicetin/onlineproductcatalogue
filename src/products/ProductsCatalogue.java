@@ -16,20 +16,21 @@ import products.model.ProductsDetail;
  * This servlet displays a survey for user's next purchase
  */
  
-@WebServlet(value="/surveyForm", initParams = {
+@WebServlet(value="/productsCatalogue", initParams = {
 		@WebInitParam(name="products", 
 				value="Internet & WWW How to Program,"
 						+ "Web Application Architecture,"
 						+ "Design Patterns,"
-						+ "Head First Servlet & JSP")
+						+ "Head First Servlet & JSP,"
+						+ "Yet Another Book")
 })
-public class ProductsForm extends HttpServlet {
+public class ProductsCatalogue extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ProductsForm() {
+    public ProductsCatalogue() {
         super();
         // TODO Auto-generated constructor stub
     }

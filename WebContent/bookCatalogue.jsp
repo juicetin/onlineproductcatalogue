@@ -19,7 +19,7 @@
 					<c:param name="item" value="${productCount.index }" />
 				</c:url>
 				<h3><a href="${myURL}">${product}</a></h3><p>
-				<img src="${applicationScope.images[productCount.index]} }"/><br>
+				<a href="${myURL}"><img src="${applicationScope.images[productCount.index]} }"/></a><br>
 				Price: <c:out value="${applicationScope.prices[productCount.index]}"/><br>
 				Average Rating: <c:out value="${applicationScope.averages[productCount.index]}"/><br>
 				Total Number of Ratings: <c:out value="${applicationScope.ratingCount[productCount.index] }"/><p>

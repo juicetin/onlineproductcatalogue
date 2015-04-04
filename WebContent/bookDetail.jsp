@@ -62,6 +62,6 @@
 		</table>
 		<p><p>
 		
-		<a href="/bookCatalogue.jsp">Back to book catalogue</a><p><p>
+		<a href=<c:url value="/bookCatalogue.jsp"></c:url>>Back to Catalogue</a>
 </body>
 </html>

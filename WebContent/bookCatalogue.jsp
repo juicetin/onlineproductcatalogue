@@ -5,17 +5,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Consumer Next Mobile Survey -- JSTL and EL</title>
+<title>Book Catalogue</title>
 <link rel="stylesheet" type="text/css" href="css/surveystyle.css"
 	media="screen" />
 </head>
 <body>
 	<h2>Catalogue</h2>
-	<form method="GET">
+	<form method="POST" action="products">
 		<c:forEach var="product" items="${applicationScope.productList}"
 			varStatus="productCount">
-			<a href="bookDetail.jsp?item=${productCount.index}">${product}</a>
-			<p>
+				<td>
+				<c:url var="myURL" value="/bookDetail.jsp">
+					<c:param name="item" value="${productCount.index }" />
+				</c:url>
+				<h3><a href="${myURL}">${product}</a></h3><p>
+				<img src="${applicationScope.images[productCount.index]} }"/><br>
+				Price: <c:out value="${applicationScope.prices[productCount.index]}"/><br>
+				Average Rating: <c:out value="${applicationScope.averages[productCount.index]}"/><br>
+				Total Number of Ratings: <c:out value="${applicationScope.ratingCount[productCount.index] }"/><p>
+				</td>
 		</c:forEach>
 	</form>
 </body>

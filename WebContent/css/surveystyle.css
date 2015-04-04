@@ -1,7 +1,12 @@
 body {
-font-family: Verdana, Arial, Helvetica, sans-serif;
-font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
 }
-h2{
-color:maroon;					
+
+h2 {
+	color: maroon;
+}
+
+table {
+
 }

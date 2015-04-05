@@ -1,10 +1,7 @@
 package products;
 
-import products.model.*;
-
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,7 +33,7 @@ public class Products extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		HttpSession session = request.getSession();
-		session.setMaxInactiveInterval(60);	//30 Minutes
+		session.setMaxInactiveInterval(1800);	//30 Minutes
 		
 		//Determine current item being viewed
 		String item = request.getParameter("item");

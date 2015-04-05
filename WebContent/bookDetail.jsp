@@ -13,6 +13,7 @@
 <body>
 		<table border="2" cellpadding="10">
 			<tr>
+				<!-- Image and ratings in left column -->
 				<td valign="top">
 					<img src="${applicationScope.images[param.item]} }"/>
 					
@@ -52,6 +53,8 @@
 						<li>Rate 1: <c:out value="${applicationScope.ratings[param.item][0]}" /></li>
 					</ul>
 				</td>
+				
+				<!-- All other book details in right column -->
 				<td valign="top">
 					<b>Title: </b> <c:out value="${applicationScope.productList[param.item]}" /><p>
 					<b>Author: </b> <c:out value="${applicationScope.authors[param.item]}" /><p>

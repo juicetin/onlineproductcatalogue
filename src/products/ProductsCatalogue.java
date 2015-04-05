@@ -42,6 +42,7 @@ public class ProductsCatalogue extends HttpServlet {
     	String[] productList = product_names.split(",");
     	products = new ProductsDetail(productList.length);
     	getServletContext().setAttribute("productList", productList);
+    	getServletContext().setAttribute("listSize", productList.length);
     
     	//Internet & World Wide Web How To Program
 		products.addAuthor(0, "Paul Deitel, Harvey Deitel, and Abbey Deitel");

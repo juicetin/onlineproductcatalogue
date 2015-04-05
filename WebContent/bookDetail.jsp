@@ -22,11 +22,14 @@
 					<p>Rating:<p>
 					<form method="POST" action="products">
 					<input type='hidden' name='item' value='${param.item}'/>
-					<label> <input type="radio" name="rate"	value="1" />1</label><p>
-					<label> <input type="radio" name="rate"	value="2" />2</label><p>
-					<label> <input type="radio" name="rate"	value="3" />3</label><p>
-					<label> <input type="radio" name="rate"	value="4" />4</label><p>
-					<label> <input type="radio" name="rate"	value="5"checked="checked"/>5</label><p>
+					<select name="rate">
+						<option value="5">5</option>
+						<option value="4">4</option>
+						<option value="3">3</option>
+						<option value="2">2</option>
+						<option value="1">1</option>
+					</select>
+					<p>
 					<p>
 					<input type="submit" value="Rate" />
 					</form>

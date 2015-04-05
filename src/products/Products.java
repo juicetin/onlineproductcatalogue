@@ -63,7 +63,7 @@ public class Products extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-//		processResult(request, response);
+		processResult(request, response);
 		request.getRequestDispatcher("/bookCatalogue.jsp").forward(
 				request, response);
 	}
